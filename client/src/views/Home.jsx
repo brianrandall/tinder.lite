@@ -16,7 +16,7 @@ const Home = () => {
     }
 
     return (
-        <div className='overlay'>
+        <div className='overlay-home'>
             <Nav 
                 minimal={false} 
                 setShowModal={setShowModal} 

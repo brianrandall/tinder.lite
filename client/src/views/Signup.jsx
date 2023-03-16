@@ -73,13 +73,15 @@ const Signup = () => {
   console.log(showGender, bio);
 
   return (
-    <div>
+    <div className='overlay-signup'>
       <Nav 
         minimal={true}
         setShowModal={() => {}}
         showModal={false}
       />
+      
       <div className='signup'>
+        
         <h2>Welcome to Tinder, {firstName}</h2>
         <p>we just need a <span style={{fontStyle: 'italic'}}>little</span> more information before you can start get started...</p>
         <form onSubmit={handleSubmit}>
@@ -108,9 +110,10 @@ const Signup = () => {
             <textarea name='about' id='about' cols='30' rows='10' placeholder='I like beer and burritos...' onChange={(e) => setBio(e.target.value)}></textarea>
             
           </section>
-          <button type='submit'>Submit</button>
+          <button type='submit' className='secondary-button'>Submit</button>
         </form>
       </div>
+      
     </div>
   )
 }
